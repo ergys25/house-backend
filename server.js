@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 
 
 
-mongoose.connect(process.env.DATABASE_URL);
+mongoose.connect("mongodb+srv://ergys:ergys@cluster0.cmvbncv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 const db = mongoose.connection;
 
 db.on('error', (err) => {
